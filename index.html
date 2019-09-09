@@ -1,0 +1,94 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+
+<h1 id="title"><strong>Survey Form</strong></h1>
+
+<main>
+
+<p id="description">Let us know how we can improve freeCodeCamp!</p>
+
+<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+ 
+  <div>
+    <label for="name" id="name-label">* Name:</label>
+    <input autofocus type="text" id="name" placeholder="Enter your name" required>
+  
+    <label for="email" id="email-label">* Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+  
+   <label for="number" id="number-label">* Age </label>
+  <input type="number" id="number" placeholder="Age" required min="10" max="110"></div>
+ <br><br>
+    
+ 
+  <label for="currentrole" id="currentrole">Which option best describes your current role?</label>
+  <select id="dropdown">
+    <option value="student">Student</option>
+    <option value="Full-time learner">Full-time learner</option>
+    <option value="Working full-time">Working full-time</option>
+    <option value="Prefernosay">Prefer not to say</option>
+    <option value="Other">Other</option>
+  </select>
+  <br><br>
+  
+<div class="userratings">
+  <label for="recommend" id="recommend">* How likely are you to recommend FreeCodeCamp to a friend?</label>
+  <ul id="friendchoice" style="list-style: none;">
+    <li>
+      <input type="radio" name="recommend" value="Definitely" checked>Definitely</input></li>
+  <li><input type="radio" name="recommend" value="Maybe">Maybe</input></li>
+<li><input type="radio" name="recommend" value="Note sure">Not sure</input></li>
+  </ul>
+</div>
+  
+<label for="improve">Things that should be improved in the future <br> (check all that apply): <br></label>
+
+<div class="preferences">
+  <ul style="list-style: none;">
+  <li><input value="front-end projects" type="checkbox" name="improvelist"></input>
+  <label for="front-end projects">Front-end projects</label></li>
+
+  <li><input value="back-end projects" type="checkbox" name="improvelist"</input>
+    <label for="back-end projects">Back-end projects</label></li>
+
+  <li><input value="data-visualization" type="checkbox" name="improvelist"</input>
+    <label for="data visualization">Data Visualization</label>  </li>
+
+ <li><input value="challenges" type="checkbox" name="improvelist"</input>
+   <label for="challenges">Challenges</label></li>
+
+  <li><input value="open-source-community" type="checkbox" name="improvelist"</input>
+    <label for="open-source-community">Open Source Community</label></li>
+
+  <li><input value="gitter-help-rooms" type="checkbox" name="improvelist"</input>
+    <label for="gitter-help-rooms">Gitter help rooms</label></li>
+
+  <li><input value="videos" type="checkbox" name="improvelist"</input>
+    <label for="videos">Videos</label></li>
+
+  <li><input value="city-meetups" type="checkbox" name="improvelist"</input>
+    <label for="city-meetups">City meetups</label></li>
+
+  <li><input value="gitter-help-rooms" type="checkbox" name="improvelist"</input>
+    <label for="gitter-help-rooms">Gitter help rooms</label></li>
+
+  <li><input value="wiki" type="checkbox" name="improvelist"</input>
+    <label for="wiki">Wiki</label></li>
+
+  <li><input value="forum" type="checkbox" name="improvelist"</input>
+    <label for="forum">Forum</label></li>
+
+  <li><input value="additional-courses" type="checkbox" name="improvelist"</input>
+    <label for="additional-course">Additional Courses</label></li>
+
+</div>
+
+<label for="prose">Any comments or suggestions?</label>
+<textarea placeholder="Enter your comments here..."></textarea><br><br><br>
+  
+<button type="submit" id="submit">Submit</button>
+ 
+</form>
+
+</main>

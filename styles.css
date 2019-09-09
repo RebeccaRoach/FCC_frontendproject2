@@ -1,0 +1,51 @@
+body {
+  background-color: #ffccb3;
+  font-family: 'Work Sans', sans-serif;
+}
+
+::placeholder {
+  font-family: 'Work Sans', sans-serif;
+}
+
+main {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  padding: 20px;
+}
+
+#survey-form {
+  text-align: center;
+  margin: auto;
+  padding: 2%;
+}
+
+input {
+  margin: 0.6rem;
+}
+
+button {
+  background-color: #ff9966;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color:  #ff7733;
+  transition-duration: 0.4s;
+}
+
+#name, #email {
+  width: 150px;
+}
